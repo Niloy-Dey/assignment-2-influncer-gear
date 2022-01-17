@@ -1,8 +1,6 @@
 body{
     background-color:white;
     font-family: 'Poppins', sans-serif;
-    /* font-family: 'Roboto', sans-serif; */
-    /* font-family: 'Roboto Condensed', sans-serif; */
 
 }
 li{
@@ -23,9 +21,7 @@ nav{
     margin-top: 40px;
 }
 header > nav > .nav-menu >ul{
-    display: flex;
-    
-    
+    display: flex; 
 }
 .nav-menu > ul > li{
     list-style: none;
@@ -47,7 +43,7 @@ header > nav > .nav-menu >ul{
     display: flex;
     justify-content:space-between;
     margin-top: 40px;
-    
+    min-height: 500px;
 }
 .advertisement > .special-bg{
     background-image: url(images/Circle\ design.svg);
@@ -64,13 +60,22 @@ header > nav > .nav-menu >ul{
 }
 .logo-section > a > img{
     width: 100px;
-    padding: 10px 0px 10px 50px;
+    padding: 10px 10px 10px 50px;
+    margin-right: 40px;
 }
-.logo-section > a{
-    margin-right: 50px;
-}
+
 .logo-section{
-    margin:100px 0px;
+    
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.propular-section h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .card-section{
     display: grid;
@@ -102,32 +107,56 @@ header > nav > .nav-menu >ul{
 .card-section > .card > p > span{
     margin-left: 20px
 }
+.seemore{
+    display: flex;
+    justify-content: right;
+
+}
 .seemore-button{
     margin-top: 20px;
-    position: absolute;
     width:200px;
     height: 24px;
-    left: 1550px;
     padding: 15px 20px ;
     color: #FD297A;
     border: none;
     font-size: 25px;
     background-color: white;
 }
-/* .optional-section{
-    width: 1110px;
-    height: 270px;
+.optional-section{
     display: flex;
-    justify-content: space-around;
-    margin:100px 0px;
+    flex-direction: column;
+    align-items: center;
+    
 }
-.optional-img > img{
-    width: 404px;
-    height: 270px;  
-} */
-
+.optional-section h1{
+    font-size: 30px;
+    margin-bottom: 0;
+}
+.optional-section p{
+    font-size: 25px;
+    
+}
+.optional-section input {
+    width: 100%;
+    margin: 10px 0;
+    padding: 12px;
+    outline: 0;
+    border:1px solid #FD297A;
+}
+.optional-section .submit{
+    width: 100px ;
+    color: white;
+    background-color:#FD297A;
+    padding: 10px;
+    border-radius: 8px ;
+    border:none;
+   
+}
+form > button{
+    margin-left: 200px;
+}
 footer{
-    margin-top: 150px;
+    margin-top: 30px;
     text-align: center;
     background-color:  #0A0826;
     color: white;
@@ -146,66 +175,60 @@ footer > .social-link > a{
 
 
 
- /* Media Query for Mobile Devices */
+
  @media only screen and (max-width:688px) {
     .advertisement {
         display: flex;
-        /* flex-wrap: wrap; */
         flex-direction: column;   
+        justify-content: center;
+        align-items: center;
     }
-    .logo-section > a{
+    .advertisement  .half-div{
+        margin-left: 20px;
+    }
+    .logo-section {
+        display: flex;
+        flex-direction: column;
+        margin: 0px auto;
+        min-height: 500px;
+    }
+    .card-section{
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr ;
+        grid-row-gap: 20px;
+        width: 50%;
+        margin: 0px auto; 
+    }
+    .card {
+        width: 400px;
+    }
+    .propular-section > h1 {
+        font-size: 40px;
+        text-align: center;
+    }
+    .propular-section > .seemore-button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .seemore{
+        justify-content: center;
+    }
+   
+}
+
+@media only screen and (max-width:400px){
+    .advertisement {
+        display: flex;
+        flex-direction: column;   
         justify-content: center;
         align-items: center;
     }
     .card-section{
         display: grid;
         grid-template-columns: 1fr;
-         grid-row-gap: 30px;
-        width: 50%;
-        padding: auto;
-        
+        grid-row-gap: 30px;
+        margin: 0px auto; 
     }
-
-.propular-section > h1 {
-    font-size: 40px;
-    text-align: center;
+    
 }
-
-    .card {
-        width: 400px;
-    }
-    .propular-section > .seemore-button{
-        display: flex;
-        justify-content: center;
-    }
-}
-  
-/* Media Query for low resolution  Tablets, Ipads */
-/* @media (min-width: 481px) and (max-width: 767px) {
-    nav, li {
-        
-    }
-} */
-  
-/* Media Query for Tablets Ipads portrait mode */
-/* @media (min-width: 768px) and (max-width: 1024px){
-    body {
-        background-color: blue;
-    }
-}
-   */
-/* Media Query for Laptops and Desktops */
-/* @media (min-width: 1025px) and (max-width: 1280px){
-    body {
-        background-color: green;
-    }
-} */
-  
-/* Media Query for Large screens */
-/* @media (min-width: 1281px) {
-    body {
-        background-color: white;
-    }
-} */
