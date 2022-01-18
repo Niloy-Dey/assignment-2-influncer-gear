@@ -11,7 +11,7 @@ header h1 ,.propular-section{
     font-size: 35px;
 }
 .container{
-    width: 1440px;
+    width: 100%;
     margin: 20px auto;
     
 }
@@ -83,6 +83,7 @@ header > nav > .nav-menu >ul{
     grid-gap: 50px;
 }
 .card-section > .card{
+    width: 100%;
     background-color: white;
     padding: 20px;
     border-radius: 20px;
@@ -126,6 +127,7 @@ header > nav > .nav-menu >ul{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     
 }
 .optional-section h1{
@@ -175,7 +177,7 @@ footer > .social-link > a{
 
 
 
-
+/* media query start here */
  @media only screen and (max-width:688px) {
     .advertisement {
         display: flex;
